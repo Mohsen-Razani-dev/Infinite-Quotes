@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+}
+.containerHeader{
+    width: fit-content;
+    margin: 50px auto;
+    border-bottom: 2px solid;
+    text-align: center;
+    display: flex;
+}
+.containerHeader > h1{
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 40px;
+    color: #454545;
+}
+
+.quoteContainer{
+    display: flex;
+    width: 85%;
+}
+.quoteContainer p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+.quoteContainer span{
+    font-size: 21px;
+    margin-right: 5px;
+}
+.WriterContainer{
+    display: grid;
+    justify-items: flex-end;
+    width: 15%;
+    padding-right: 10px;
+
+}
+.WriterContainer sub {
+    /*height: 100%;*/
+    /*width: 15%;*/
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    /*align-items: flex-end;*/
+    /*padding-bottom: 70px;*/
+    font-size: 15px;
+    font-weight: 100;
+}
+.QuoteSymbol{
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 20px;
+}
+.quotes{
+    /*padding: 10px 50px;*/
+    display: grid;
+    justify-items: center;
+}
+.quote{
+    padding: 40px 10px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 85%;
+    /*border: 1px solid gray;*/
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+
+
+/*loader animation for beginner*/
+.loader{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.loader div{
+    background-color: rgba(67, 67, 67, 0.42);
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    margin: 40px 5px;
+}
+.loader div:nth-child(1){
+    animation: loader1 500ms linear infinite alternate;
+}
+.loader div:nth-child(2){
+    animation: loader2 500ms linear infinite alternate;
+}
+.loader div:nth-child(3){
+    animation: loader3 500ms linear infinite alternate;
+}
+@keyframes loader1 {
+    0%{
+        transform: scale(1.2);
+    }
+
+    33%{
+        transform: scale(1);
+    }
+    66%{
+        transform: scale(1.2);
+    }
+}
+@keyframes loader2 {
+    0%{
+        transform: scale(1);
+    }
+
+    33%{
+        transform: scale(1.2);
+    }
+    66%{
+        transform: scale(1);
+    }
+}
+@keyframes loader3 {
+    0%{
+        transform: scale(1.2);
+    }
+
+    33%{
+        transform: scale(1);
+    }
+    66%{
+        transform: scale(1.2);
+    }
+}
